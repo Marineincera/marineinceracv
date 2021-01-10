@@ -1,0 +1,37 @@
+.skills-details-container{
+    background-color: var(--skills-color);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    overflow:scroll;
+    height: 100%;
+}
+
+.skills-details-link{
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.skill-title{
+    color: white;
+   }
+
+.skill-title-hover{
+    color: var(--skills-color);
+}
+
+.skill-icon-title{
+    padding: 1vw;
+    width: 20%;
+    border-radius: 3%;
+    color: white;
+   }
+
+.skill-icon-title:hover{
+       background-color: white;
+       color: var(--skills-color);
+   }

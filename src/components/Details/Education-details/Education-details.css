@@ -1,0 +1,30 @@
+.education-case{
+    border: 2px solid brown;
+    margin: 2vh;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;   
+}
+
+.education-case:hover{
+    /* background-color: brown; */
+    /* opacity: 0.3; */
+    /* color: white; */
+    /* color: brown; */
+}
+
+h1{
+    font-size: 3vh;
+}
+
+h1, h2 {
+    color: brown;
+}
+
+
+h2, p{
+    font-size: 2vh;
+}

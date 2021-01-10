@@ -1,0 +1,80 @@
+.pro-container{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--professionnal-color);
+    color: white;
+ 
+}
+
+.buttons-group{
+    display: flex;
+    align-self: center;
+    justify-self: space-around;
+
+}
+
+button{
+    background-color: white;
+    color: var(--professionnal-color);
+    padding: 2vh;
+    border: 0px solid var(--professionnal-color);
+    border-radius: 2%;
+    margin: 2vh;
+}
+
+button:hover{
+    background-color: var(--professionnal-color);
+    color: white;
+    border: 2px solid white;
+}
+
+button::after{
+    background-color: white;
+    color: brown;
+    border: 2px solid brown;
+}
+
+.work-section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-details{
+    width: 80%;
+    align-items: center;
+}
+
+
+.icons-group{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+.icon-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    padding: 1vw;
+    /* color: white; */
+}
+
+.icon-section:hover{
+    background-color: white;
+    border-radius: 3%;
+    color: var(--professionnal-color); 
+}
+
+.pro-icon-title{
+    color: white;
+}
+
+.pro-icon-title-hover{
+    color:var(--professionnal-color);
+
+}
