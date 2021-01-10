@@ -1,0 +1,110 @@
+@import 'https://fonts.googleapis.com/css?family=Economica';
+
+@mixin rotated-text($num-letters) {
+  $angle-span: 26deg;
+  $angle-offset: -13deg;
+$angle-per-char: $angle-span / $num-letters;
+  @for $i from 1 through $num-letters {
+    .char#{$i} {
+      transform: rotate($angle-offset + $angle-per-char * $i);
+    }
+  }
+}
+
+
+html, body{
+  margin: 0;
+  max-width: 99.5%;
+  height: 99%;
+  display: flex;
+  justify-content: center;
+  padding-left: 0.5vh;
+}
+
+.wrapper{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 99vh;
+  width: 98vw;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 99%;
+  width: 100%;
+
+
+  &:hover{
+    & > .section{
+      filter: brightness(22%);
+    }
+    & > .section:hover{
+      filter: brightness(100%);
+    }
+  }
+  
+  .section{
+    flex-grow: 1;
+    position: relative;
+    height: 100%;
+    transition: all 0.4s;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+    flex: 1;
+    
+
+    
+    
+    &:hover{
+      flex-grow: 2;
+      transition: flex 0.2s;
+      
+
+      
+    }
+    
+    &.first{
+      // background: url("https://artsandculture.withgoogle.com/gcs/national-parks-service/en-us/Asset-Kenai-desktop.jpg") center;
+    background-color: var(--presentation-color);
+    }
+    &:nth-child(2){
+      // background: url("https://artsandculture.withgoogle.com/gcs/national-parks-service/en-us/Asset-Hawaii-desktop.jpg") center;
+      background-color: var(--education-color);
+    }
+    &:nth-child(3){
+      // background: url("https://artsandculture.withgoogle.com/gcs/national-parks-service/en-us/de0b954d-ca76-41d3-ac3a-900c6bc25139.jpg") center;
+      background-color: var(--professionnal-color);
+    }
+    &:nth-child(4){
+      // background: url("https://artsandculture.withgoogle.com/gcs/national-parks-service/en-us/Asset-Bryce-desktop.jpg") center;
+      background-color: var(--skills-color);
+    }
+    &:nth-child(5){
+      // background: url("https://artsandculture.withgoogle.com/gcs/national-parks-service/en-us/Asset-Tortugas-desktop.jpg") center;
+      background-color: var(--others-color);
+    }
+  }
+
+  .details{
+    width: 100vw;
+    height: 80%;
+    // background-color: brown;
+
+  }
+}
+
+@media (max-width: 400) { 
+ .container{
+   background-color: #0B3142;
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+ }
+}
+

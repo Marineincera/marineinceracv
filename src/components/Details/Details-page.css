@@ -1,0 +1,46 @@
+.container-details{
+    width: 99.5%;
+    /* height: 80vh; */
+    height: 80vh;
+    background-color: white;
+    /* margin-top: -90vh; */
+    margin-top: -90vh;
+    position:absolute;
+    overflow: scroll;
+    margin-left: -49vw;
+
+    
+}
+
+.presentation-container{
+    background-color: var(--presentation-color);
+    animation-duration: 0.1s;
+    animation-name: slideout;
+}
+
+.education-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+
+}
+
+/* .slidein {
+    animation-duration: 3s;
+    animation-name: slidein;
+
+  } */
+  
+  /* @keyframes slidein {
+    from {
+      margin-right:100%;
+      width:100%
+    }
+  
+    to {
+      margin-right:0%;
+      width:0%;
+    }
+  } */
+

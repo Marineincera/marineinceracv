@@ -1,0 +1,38 @@
+
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  --presentation-color: #F2CD5D;
+  --education-color: #DC136C;
+  --professionnal-color: #9999C3;
+  --skills-color:  #0B3142;
+  --others-color: #32021F;
+}
+
+.icon-link{
+  font-size: 14vh;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
