@@ -9,15 +9,19 @@ class Homepage extends React.Component {
         super(props)
         this.state = {
             isDetailsPageOpened : false
-         
-
+            
+            
         }
-        this.datas = "cul"
+        this.datas = ""
+        this.title = ""
+
     
     }
 
     openDetails = (section) => {
         this.datas = section
+        this.title = section + "-button"
+        console.log(this.title);
         this.setState(state => ({ isDetailsPageOpened: !state.isDetailsPageOpened}))
     }
 
@@ -27,7 +31,7 @@ class Homepage extends React.Component {
     <div class="wrapper">
 
         <div onClick={() => { this.setState(state => ({ isDetailsPageOpened: false}))}}>
-        {this.state.isDetailsPageOpened ? <p>RETOUR A l'ACCUEIL</p> : null}
+        {this.state.isDetailsPageOpened ? <button className={this.title}>RETOUR AU MENU</button> : null}
             
         </div>
 
