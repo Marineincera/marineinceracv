@@ -68,7 +68,7 @@ class SkillsDetails extends React.Component {
     render() {
       return (
             <div class="container-details skills-details-container">
-                {this.skillsToDisplay.length > 0 && this.state.isVisibleSkillsList? <button onClick={() => this.setState(state => ({ isVisibleSkillsList: !state.isVisibleSkillsList}))}>CLOSE</button> : null }
+                {this.skillsToDisplay.length > 0 && this.state.isVisibleSkillsList? <button className="skills-closing-button" onClick={() => this.setState(state => ({ isVisibleSkillsList: !state.isVisibleSkillsList}))}>X</button> : null }
                 {this.skillsToDisplay.length > 0 && this.state.isVisibleSkillsList? 
                     <SkillsList datas={this.skillsToDisplay} title={this.title} toolsArray={[this.developmentToolsArray,this.communicationToolsArray,this.softwaresArray]}/>  
                 :
