@@ -19,7 +19,7 @@ button{
     padding: 2vh;
     border: 0px solid var(--professionnal-color);
     border-radius: 2%;
-    margin: 2vh;
+    /* margin: 2vh; */
 }
 
 button:hover{
@@ -77,4 +77,15 @@ button::after{
 .pro-icon-title-hover{
     color:var(--professionnal-color);
 
+}
+
+.pro-closing-button{
+    justify-self: flex-start;
+    width: 5vh;
+    color:var(--professionnal-color);
+}
+
+.pro-closing-button:hover{
+    background-color: var(--professionnal-color);
+    color: white;
 }

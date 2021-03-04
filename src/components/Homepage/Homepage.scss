@@ -99,6 +99,61 @@ html, body{
   }
 }
 
+button{
+  outline: none;
+}
+
+.presentation-button{
+  background-color:var(--presentation-color);
+  color : white;
+}
+
+.presentation-button:hover{
+  margin-left: -1vh;
+  background-color:white;
+  color : var(--presentation-color);
+}
+
+.education-button{
+  background-color:var(--education-color);
+  color : white;
+}
+
+.education-button:hover{
+  background-color:white;
+  color : var(--education-color);
+}
+
+.work-button{
+  background-color:var(--professionnal-color);
+  color : white;
+}
+
+.work-button:hover{
+  background-color:white;
+  color : var(--professionnal-color);
+}
+
+.skills-button{
+  background-color:var(--skills-color);
+  color : white;
+}
+
+.skills-button:hover{
+  background-color:white;
+  color : var(--skills-color);
+}
+
+.others-button{
+  background-color:var(--others-color);
+  color : white;
+}
+
+.others-button:hover{
+  background-color:white;
+  color : var(--others-color);
+}
+
 @media (max-width: 400) { 
  .container{
    background-color: #0B3142;

@@ -1,6 +1,5 @@
 import React from 'react';
 import './Homepage-wrap.scss';
-import Presentation from './../../sections/presentation';
 import DetailsPage from '../../Details/Details-page'
 
 class HomepageWrap extends React.Component {
@@ -29,8 +28,6 @@ render() {
       </div>
       <div class={this.state.className}>
         <p>{this.props.description}</p>
-        <p onClick={this.openSection}>Ouvrir</p>
-      {this.state.detailsSectionOpened ? <Presentation/> : null}
       </div>
     </span>
   )

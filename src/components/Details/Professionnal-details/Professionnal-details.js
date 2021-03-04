@@ -35,7 +35,7 @@ class ProfesionnalDetails extends React.Component {
     render() {
         return (
             <div class="pro-container container-details">
-                {this.state.section !== "null" ? <p onClick={()=>{ this.setState(state => ({ section : "null"}))}}>CLXSE</p> : null}
+                {this.state.section !== "null" ? <button className="pro-closing-button" onClick={()=>{ this.setState(state => ({ section : "null"}))}}>X</button> : null}
                 
                 {this.state.section !== "null" ? 
                     <div class="buttons-group">

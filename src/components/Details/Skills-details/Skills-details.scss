@@ -35,3 +35,13 @@
        background-color: white;
        color: var(--skills-color);
    }
+
+.skills-closing-button{
+    align-self: start;
+    color: var(--skills-color);
+}
+
+.skills-closing-button:hover{
+    background-color: var(--skills-color);
+    color: white;
+}

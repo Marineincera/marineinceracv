@@ -10,6 +10,7 @@ class EducationDetails extends React.Component {
       menuVisibility : false
 
     }
+    this.buttonText = "+"
   }
 
   
@@ -17,6 +18,11 @@ class EducationDetails extends React.Component {
   showDescription = () => {
     this.setState(state => ({ menuVisibility: !state.menuVisibility}))
     this.setState(state => ({ descriptionVisibility: !state.descriptionVisibility}))
+    if (this.buttonText === "+"){
+      this.buttonText = "-"
+    } else {
+      this.buttonText = "+"
+    }
   }
 
   showMenu = () => {
@@ -27,22 +33,25 @@ class EducationDetails extends React.Component {
   showDetails = () => {
     this.setState(state => ({ menuVisibility: false}))
     this.setState(state => ({ descriptionVisibility: false}))
+  
   }
 
 
     render() {
       return (
-          <div key={this.props.item.id} class="education-case" onClick={this.showDescription} onMouseEnter={this.showMenu} onMouseLeave={this.showDetails}>
-            {this.state.menuVisibility? null : 
+          <div key={this.props.item.id} class="education-case" onClick={this.showDescription} >
+            {/* {this.state.menuVisibility? null :  */}
             <div>
-              {this.state.descriptionVisibility? null :<p>{this.props.item.date}</p> }  
+              {this.state.descriptionVisibility? null :<p className="education-text">{this.props.item.date}</p> }  
               <h1>{this.props.item.title}</h1>
-              {this.state.descriptionVisibility? null : <h2>{this.props.item.level}</h2>}
-              {this.state.descriptionVisibility? null : <p >{this.props.item.school}</p>}
-              {this.state.descriptionVisibility? <p>{this.props.item.description}</p> : null }
-              </div>
-              }
-              {this.state.menuVisibility? <p>voir details </p> : null}
+              {this.state.descriptionVisibility? null : <h2 className="education-title-second">{this.props.item.level}</h2>}
+              {this.state.descriptionVisibility? null : <p className="education-text">{this.props.item.school}</p>}
+              {this.state.descriptionVisibility? <p className="education-text">{this.props.item.description}</p> : null }
+              <button className="education-details-button">{this.buttonText} </button> 
+              </div> 
+
+              {/* } */}
+              {/* {this.state.menuVisibility? <p className="education-text">voir details </p> : null} */}
           </div>
       
       )
