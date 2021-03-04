@@ -19,7 +19,7 @@ button{
     padding: 2vh;
     border: 0px solid var(--professionnal-color);
     border-radius: 2%;
-    margin: 2vh;
+    /* margin: 2vh; */
 }
 
 button:hover{
