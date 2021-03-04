@@ -470,7 +470,37 @@ const datas =
                                 }
                 ]
             }
-        ]
+        ],
+        "Realisations": {
+                "title": "Affiches et flyers",
+                "realisations": [
+                    {
+                        "link":"aff1.png",
+                        "title": "Affiche réalisée pour promouvoir un festival artistique fictif",
+                        "details": "Cours de Marketing M2",
+                        "date": "2017"
+                    },
+                    {
+                        "link":"aff3.png",
+                        "title": "Affiche réalisée pour promouvoir des cours de théâtre fictifs",
+                        "details": "Cours de Marketing M2",
+                        "date": "2017"
+                    },
+                    {
+                        "link":"fly1.png",
+                        "title": "Flyer réalisé pour l'entreprise Lou Cocal lors de son projet d'ouverture d'entreprise au public",
+                        "details": "Cours de Gestion de projet Tourisme M2",
+                        "date": "2017"
+                    },
+                    {
+                        "link":"aff2.png",
+                        "title": "Affiche réalisée dans le cadre d'un projet concernant la communication sur la rive droite bordelaise",
+                        "details": "Cours d'anglais M1",
+                        "date": "2016"
+                    },
+                ]
+        },
+           
     }
 
 export default datas

@@ -5,6 +5,7 @@ import EducationDetails from '../Details/Education-details/Education-details'
 import ProfesionnalDetails from './Professionnal-details/Professionnal-details';
 import PresentationDetails from './Presentation-details/Presentation-details';
 import SkillsDetails from './Skills-details/Skills-details';
+import OthersDetails from './Others-details/Others-details';
 
 
 class DetailsPage extends React.Component {
@@ -44,6 +45,11 @@ render() {
     return(
     <SkillsDetails/>
    ) 
+}
+if(this.props.datas === "others"){ 
+  return(
+  <OthersDetails/>
+ ) 
 }
 }
 
