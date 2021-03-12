@@ -24,8 +24,6 @@ html, body{
 .wrapper{
   display:flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   height: 99vh;
   width: 98vw;
 }
@@ -92,31 +90,44 @@ html, body{
   }
 
   .details{
-    width: 100vw;
-    height: 80%;
-    // background-color: brown;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 20vw;
+    height: 99%;
 
   }
 }
 
+
 button{
   outline: none;
+
 }
 
 .presentation-button{
   background-color:var(--presentation-color);
   color : white;
+  margin-bottom: 6vh;
+  position: absolute;
+  z-index: 5;
 }
 
 .presentation-button:hover{
   margin-left: -1vh;
   background-color:white;
   color : var(--presentation-color);
+  margin-bottom: 6vh;
+  position: absolute;
+  z-index: 5;
 }
 
 .education-button{
   background-color:var(--education-color);
   color : white;
+  margin-bottom: 6vh;
+  position: absolute;
+  z-index: 5;
 }
 
 .education-button:hover{
