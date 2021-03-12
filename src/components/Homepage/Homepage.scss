@@ -88,15 +88,19 @@ html, body{
       background-color: var(--others-color);
     }
   }
-
   .details{
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 20vw;
     height: 99%;
-
+  
   }
+}
+
+.details{
+  position:absolute;
+  width: 100%;
 }
 
 

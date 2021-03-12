@@ -34,7 +34,7 @@ class Homepage extends React.Component {
         {this.state.isDetailsPageOpened ? <button className={this.title}>RETOUR AU MENU</button> : null}
             
         </div>
-        {!this.state.isDetailsPageOpened ? 
+  
         <div class="container" >
             
             <div  onClick={() => this.openDetails("presentation")} className="section first">
@@ -53,12 +53,12 @@ class Homepage extends React.Component {
                 <HomepageWrap title="Autres" description="blabla" ></HomepageWrap>
             </div>
         </div>
-        :
+        
         <div class="details">
              {this.state.isDetailsPageOpened ? <DetailsPage datas={this.datas} />: null}
       
         </div>  
-    }
+    
     </div>
       );
     }
