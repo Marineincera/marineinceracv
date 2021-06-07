@@ -47,11 +47,10 @@ class EducationDetails extends React.Component {
               {this.state.descriptionVisibility? null : <h2 className="education-title-second">{this.props.item.level}</h2>}
               {this.state.descriptionVisibility? null : <p className="education-text">{this.props.item.school}</p>}
               {this.state.descriptionVisibility? <p className="education-text">{this.props.item.description}</p> : null }
-              <button className="education-details-button">{this.buttonText} </button> 
+              {/* <button className="education-details-button">{this.buttonText} </button>  */}
               </div> 
 
-              {/* } */}
-              {/* {this.state.menuVisibility? <p className="education-text">voir details </p> : null} */}
+          
           </div>
       
       )

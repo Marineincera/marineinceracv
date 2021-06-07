@@ -115,15 +115,14 @@ button{
   margin-bottom: 6vh;
   position: absolute;
   z-index: 5;
+  right: 0;
 }
 
 .presentation-button:hover{
   margin-left: -1vh;
   background-color:white;
   color : var(--presentation-color);
-  margin-bottom: 6vh;
-  position: absolute;
-  z-index: 5;
+
 }
 
 .education-button{
@@ -132,6 +131,7 @@ button{
   margin-bottom: 6vh;
   position: absolute;
   z-index: 5;
+  right: 0;
 }
 
 .education-button:hover{
@@ -140,28 +140,38 @@ button{
 }
 
 .work-button{
+  background-color:white;
+  color : var(--professionnal-color);
+  margin-bottom: 6vh;
+  position: absolute;
+  z-index: 5;
+  right: 0;
+}
+
+.work-button:hover{
   background-color:var(--professionnal-color);
   color : white;
 }
 
-.work-button:hover{
-  background-color:white;
-  color : var(--professionnal-color);
-}
-
 .skills-button{
-  background-color:var(--skills-color);
-  color : white;
+  background-color:white;
+  color : var(--skills-color);
+  margin-bottom: 6vh;
+  position: absolute;
+  z-index: 5;
+  right: 0;
 }
 
 .skills-button:hover{
-  background-color:white;
-  color : var(--skills-color);
+  background-color:var(--skills-color);
+  color : white;
+
 }
 
 .others-button{
   background-color:var(--others-color);
   color : white;
+  right: 0;
 }
 
 .others-button:hover{

@@ -49,9 +49,9 @@ class Homepage extends React.Component {
            <div class="section" onClick={() => this.openDetails("skills")}>
                 <HomepageWrap title="Compétences" description="blabla" ></HomepageWrap>
             </div>
-           <div class="section" onClick={() => this.openDetails("others")}>
+           {/* <div class="section" onClick={() => this.openDetails("others")}>
                 <HomepageWrap title="Autres" description="blabla" ></HomepageWrap>
-            </div>
+            </div> */}
         </div>
         
         <div class="details">
