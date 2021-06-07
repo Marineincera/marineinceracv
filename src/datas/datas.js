@@ -5,7 +5,7 @@ const datas =
         "Identity" :  
             {   
                 "name": "Marine Incera",
-                "age" : "29",
+                "age" : "30",
                 "city": "Bordeaux",
                 "country" : "France",
                 "personnalSkills": [
@@ -19,10 +19,9 @@ const datas =
                     "Curieuse"
                 ],
                 "fondamentalsSkills" : [
-                    "Web",
-                    "Tourisme",
-                    "Accueil",
-                    "Vente"
+                    "Développement Web",
+                    "Gestion de projet",
+                    "Tourisme"
                 ],
                 "phone": "06 32 50 25 11",
                 "mail": "marine.incera@gmail.com",
